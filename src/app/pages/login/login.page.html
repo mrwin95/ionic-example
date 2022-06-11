@@ -1,0 +1,39 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button></ion-back-button>
+        </ion-buttons>
+        <ion-title>
+            Log In
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+<ion-content>
+    <ion-grid>
+        <ion-row justify-content-center>
+            <ion-col class="align-self-center">
+                <form>
+                    <div class="input-group">
+                        <ion-item lines="full">
+                            <ion-label position="floating">Email</ion-label>
+                            <ion-input type="text" required="required"></ion-input>
+                        </ion-item>
+                        <ion-item lines="full">
+                            <ion-label position="floating">Password</ion-label>
+                            <ion-input type="text" required="required"></ion-input>
+                        </ion-item>
+                        <ion-row class="text-align-center">
+                            <ion-col>
+                                <ion-button type="submit" color="danger" expand="block">
+                                    Sign In
+                                </ion-button>
+                                <a [routerLink]="['/forgot-password']" class="already small-text">Forgot password</a>
+                            </ion-col>
+                        </ion-row>
+                    </div>
+
+                </form>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-content>
